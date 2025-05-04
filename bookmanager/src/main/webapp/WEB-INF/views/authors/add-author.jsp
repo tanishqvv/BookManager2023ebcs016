@@ -8,16 +8,6 @@
     <div class="container">
         <h1>Add New Author</h1>
         
-        <!-- Display error message if any -->
-        <c:if test="${not empty errorMessage}">
-            <div class="alert error">${errorMessage}</div>
-        </c:if>
-
-        <!-- Display success message if any -->
-        <c:if test="${not empty successMessage}">
-            <div class="alert success">${successMessage}</div>
-        </c:if>
-
         <!-- Form to add new author -->
         <form action="${pageContext.request.contextPath}/authors/add" method="post">
             <div class="form-group">
